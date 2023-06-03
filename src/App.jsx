@@ -23,7 +23,7 @@ function App() {
   useEffect(() => {
     consultarAsteroides()
   }, [date])
-  console.warn(image);
+  
   return (
     <div>
       <header>
