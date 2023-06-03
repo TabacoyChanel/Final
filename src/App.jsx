@@ -33,7 +33,7 @@ function App() {
       {image?.url ?
         <div>
           <h2>{image.title}</h2>
-          <img src={image.url} />
+          <img height={400} src={image.url} />
           <p>{image.explanation}</p>
           <b>Copyright: {image.copyright ?? "Fair use"}</b>
         </div> : <p>Photo not found</p>
