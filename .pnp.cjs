@@ -35,6 +35,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:0.3.5"],\
+            ["luxon", "npm:3.3.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:18.2.0"],\
             ["vite", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:4.3.9"]\
@@ -1059,6 +1060,7 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
             ["eslint-plugin-react", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:7.32.2"],\
             ["eslint-plugin-react-hooks", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:4.6.0"],\
             ["eslint-plugin-react-refresh", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:0.3.5"],\
+            ["luxon", "npm:3.3.0"],\
             ["react", "npm:18.2.0"],\
             ["react-dom", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:18.2.0"],\
             ["vite", "virtual:e094ce452d08c352a7956fe528ce275d67501eba9e8e03976329c7fb564f9848b10332832c3437228179db969d5fe3b819b89ccfa5f5fdcdeee5bd25c97a8841#npm:4.3.9"]\
@@ -2599,6 +2601,15 @@ function $$SETUP_STATE(hydrateRuntimeState, basePath) {
           "packageLocation": "./.yarn/cache/lru-cache-npm-7.18.3-e68be5b11c-e550d77238.zip/node_modules/lru-cache/",\
           "packageDependencies": [\
             ["lru-cache", "npm:7.18.3"]\
+          ],\
+          "linkType": "HARD"\
+        }]\
+      ]],\
+      ["luxon", [\
+        ["npm:3.3.0", {\
+          "packageLocation": "./.yarn/cache/luxon-npm-3.3.0-bdbae9bfd5-50cf17a0dc.zip/node_modules/luxon/",\
+          "packageDependencies": [\
+            ["luxon", "npm:3.3.0"]\
           ],\
           "linkType": "HARD"\
         }]\
