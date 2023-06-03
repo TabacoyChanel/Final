@@ -11,24 +11,31 @@ function App() {
   const [date, setDate] = useState(new Date())
 
   const consultarAsteroides = async () => {
-    const res = await fetch(API_URL.replace(':date', DateTime.fromJSDate(date).toFormat('yyyy-MM-dd')))
-    const jsonRes = await res.json()
-    console.log(jsonRes);
-    setImage(jsonRes)
+    try {
+      const res = await fetch(API_URL.replace(':date', DateTime.fromJSDate(date).toFormat('yyyy-MM-dd')))
+      const jsonRes = await res.json()
+      setImage(jsonRes)
+    } catch {
+      setImage(undefined)
+    }
   }
 
   useEffect(() => {
     consultarAsteroides()
-  }, [])
-
+  }, [date])
+  console.warn(image);
   return (
     <div>
-      {image &&
-        <>
+      <header>
+        <label style={{ marginRight: 8 }} htmlFor="select-date">Select Date</label>
+        <input type="date" id="select-date" value={DateTime.fromJSDate(date).toFormat('yyyy-MM-dd')} onChange={e => setDate(e.target.valueAsDate)} />
+      </header>
+      {image?.url ?
+        <div>
           <h2>{image.title}</h2>
           <img src={image.url} />
           <p>{image.explanation}</p>
-        </>
+        </div> : <p>Photo not found</p>
       }
     </div>
   )
